@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>backoffice</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="addOffer.js"></script>
+    </head>
+    <body>
+      <div class="form-container">
+        <h1>Add a Travel Offer</h1>
+        <form>
+            <label for="title">Title:<br></label>
+            <input type="text" minlength="3" name="title" id="title"><br>
+            <label for="destination">Destination:<br></label>
+            <input type="text" pattern="[A-Za-z\s]{3,}" name="destination" id="destination"><br>
+            <label for="departure date">Departure Date:<br></label>
+            <input type="date" name="ddate" id="ddate"><br>
+            <label for="Return date">Return Date:<br></label>
+            <input type="date" name="rdate" id="rdate"><br>
+            <label for="price">Price:<br></label>
+            <input type="number" name="price" id="price" min="0" step="0.01"><br>
+            <label>Availability:<br></label>
+            <input type="checkbox" name="availability" ><br>
+            <select name="category" required>
+                <option value="">Select a category</option>
+                <option value="Category1">Category 1</option>
+                <option value="Category2">Category 2</option>
+                <option value="Category3">Category 3</option>
+            </select>
+            //gdima
+            <input type="submit" value="Add Offer">
+            //partie1
+            <input type="button" value="Add Offer" onClick="validerFormulaire()">
+            //partie2
+            <input type="submit" value="Submit Offer">
+
+        </form>
+     </div>
+    </body>
+</html>
